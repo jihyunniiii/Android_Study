@@ -7,4 +7,6 @@
     <string name="sign_password_hint">비밀번호를 입력하세요</string>
     <string name="sign_in_text">SIGN IN</string>
     <string name="sign_up_text">SIGN UP</string>
+    <string name="sign_up_mbti">MBTI</string>
+    <string name="sign_mbti_hint">MBTI를 입력하세요</string>
 </resources>
