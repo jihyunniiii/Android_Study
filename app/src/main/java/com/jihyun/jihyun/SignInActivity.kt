@@ -28,11 +28,14 @@ class SignInActivity : AppCompatActivity() {
         signInBinding = DataBindingUtil.setContentView(this, R.layout.activity_sign_in)
 
         signInBinding.btnSignInSignIn.setOnClickListener {
-            var signInIDStr : String = signInBinding.etSignInId.text.toString()
-            var signInPasswordStr : String = signInBinding.etSignInPassword.text.toString()
+            var signInIDStr: String = signInBinding.etSignInId.text.toString()
+            var signInPasswordStr: String = signInBinding.etSignInPassword.text.toString()
 
             if (signInIDStr == savedID && signInPasswordStr == savedPassword) {
                 Toast.makeText(this, "Sign In Success!", Toast.LENGTH_LONG).show()
+
+                val homeIntent = Intent(this, HomeActivity::class.java)
+                startActivity(homeIntent)
             }
         }
 
