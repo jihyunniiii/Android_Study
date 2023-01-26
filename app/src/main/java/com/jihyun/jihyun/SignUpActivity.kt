@@ -33,7 +33,7 @@ class SignUpActivity : AppCompatActivity() {
             override fun afterTextChanged(p0: Editable?) {
                 var idStr: String = signUpBinding.etSignUpId.text.toString()
 
-                if (idStr.length >= 6 && idStr.length <= 10) {
+                if (idStr.length in 6..10) {
                     idEnabled = true
 
                     Log.d("SignUp", "id Check!")
@@ -59,7 +59,7 @@ class SignUpActivity : AppCompatActivity() {
             override fun afterTextChanged(p0: Editable?) {
                 var passwordStr: String = signUpBinding.etSignUpPassword.text.toString()
 
-                if (passwordStr.length >= 8 && passwordStr.length <= 12) {
+                if (passwordStr.length in 8..12) {
                     passwordEnabled = true
 
                     Log.d("SignUp", "password Check!")
