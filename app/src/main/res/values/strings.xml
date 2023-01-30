@@ -1,4 +1,5 @@
 <resources>
+    <!--  sign in + sign up  -->
     <string name="app_name">JiHyun</string>
     <string name="sign_in_title">welcome to JiHyun</string>
     <string name="sign_id">ID</string>
@@ -9,4 +10,7 @@
     <string name="sign_up_text">SIGN UP</string>
     <string name="sign_up_mbti">MBTI</string>
     <string name="sign_mbti_hint">MBTI를 입력하세요</string>
+
+    <!--  gallery  -->
+    <string name="gallery_title">FAVORITE ALBUM</string>
 </resources>
