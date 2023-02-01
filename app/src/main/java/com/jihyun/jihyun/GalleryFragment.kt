@@ -24,9 +24,9 @@ class GalleryFragment : Fragment() {
             "LE SSERAFIM (르세라핌)"
         ),
         Album(
-            R.drawable.music_image_afterlike,
-            "After LIKE",
-            "IVE (아이브)"
+            R.drawable.music_image_ynwa,
+            "YOU NEVER WALK ALONE",
+            "방탄소년단"
         )
     )
 
