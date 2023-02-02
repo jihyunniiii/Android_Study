@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.tabs.TabLayoutMediator
 import com.jihyun.jihyun.databinding.FragmentGalleryBinding
 
 class GalleryFragment : Fragment() {
@@ -43,6 +44,9 @@ class GalleryFragment : Fragment() {
         val adapter = AlbumAdapter(requireContext())
         binding.vpAlbum.adapter = adapter
         adapter.setAlbumList(myAlbumList)
+
+        TabLayoutMediator(binding.tabAlbum, binding.vpAlbum)
+        { tab, position -> }.attach()
     }
 
     override fun onDestroyView() {
